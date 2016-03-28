@@ -38,7 +38,7 @@ var port = process.env.PORT || process.env.NODE_PORT || 3000;
 process.env.PWD = process.cwd();
 
 var app = express();
-app.use('/assets', express.static(path.resolve(__dirname+'../../client/')));
+app.use('/assets', express.static(path.resolve(__dirname+'/../client/')));
 app.use(compression());
 app.use(bodyParser.urlencoded({
 	extended: true
